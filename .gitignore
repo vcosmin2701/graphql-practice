@@ -1,0 +1,59 @@
+# Xcode
+DerivedData/
+*.xcworkspace
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+*.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Temporary files and logs
+*.tmp
+*.log
+
+# macOS Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# IDE
+.idea/
+*.iml
+
+# Asset Catalog compiler generated files
+*.xcassets/.*
+
+# Other
+*.swp
+*.swo
+*.gz
+
+# Debug/Build files
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Archives
+*.xcarchive
+
+# Playground files
+timeline.xctimeline
+playground.xcworkspace
