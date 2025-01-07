@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F72F8B582D2D701500EB273A /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = F72F8B572D2D701500EB273A /* Apollo */; };
+		F72F8B5A2D2D701500EB273A /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = F72F8B592D2D701500EB273A /* ApolloWebSocket */; };
+		F72F8B622D2D722200EB273A /* RickQLAPI in Frameworks */ = {isa = PBXBuildFile; productRef = F72F8B612D2D722200EB273A /* RickQLAPI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F72F8B452D2D6D8C00EB273A /* RickQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -16,6 +22,11 @@
 			path = RickQL;
 			sourceTree = "<group>";
 		};
+		F72F8B5B2D2D703200EB273A /* graphql */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = graphql;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72F8B582D2D701500EB273A /* Apollo in Frameworks */,
+				F72F8B5A2D2D701500EB273A /* ApolloWebSocket in Frameworks */,
+				F72F8B622D2D722200EB273A /* RickQLAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +46,7 @@
 		F72F8B3C2D2D6D8C00EB273A = {
 			isa = PBXGroup;
 			children = (
+				F72F8B5B2D2D703200EB273A /* graphql */,
 				F72F8B472D2D6D8C00EB273A /* RickQL */,
 				F72F8B462D2D6D8C00EB273A /* Products */,
 			);
@@ -62,9 +77,13 @@
 			);
 			fileSystemSynchronizedGroups = (
 				F72F8B472D2D6D8C00EB273A /* RickQL */,
+				F72F8B5B2D2D703200EB273A /* graphql */,
 			);
 			name = RickQL;
 			packageProductDependencies = (
+				F72F8B572D2D701500EB273A /* Apollo */,
+				F72F8B592D2D701500EB273A /* ApolloWebSocket */,
+				F72F8B612D2D722200EB273A /* RickQLAPI */,
 			);
 			productName = RickQL;
 			productReference = F72F8B452D2D6D8C00EB273A /* RickQL.app */;
@@ -94,6 +113,10 @@
 			);
 			mainGroup = F72F8B3C2D2D6D8C00EB273A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F72F8B562D2D701500EB273A /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				F72F8B602D2D722200EB273A /* XCLocalSwiftPackageReference "RickQLAPI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F72F8B462D2D6D8C00EB273A /* Products */;
 			projectDirPath = "";
@@ -324,6 +347,41 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		F72F8B602D2D722200EB273A /* XCLocalSwiftPackageReference "RickQLAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = RickQLAPI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F72F8B562D2D701500EB273A /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F72F8B572D2D701500EB273A /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F72F8B562D2D701500EB273A /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		F72F8B592D2D701500EB273A /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F72F8B562D2D701500EB273A /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		F72F8B612D2D722200EB273A /* RickQLAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RickQLAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F72F8B3D2D2D6D8C00EB273A /* Project object */;
 }

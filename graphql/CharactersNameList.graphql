@@ -1,0 +1,8 @@
+query CharactersName {
+  characters {
+    results {
+      name
+    }
+  }
+}
+
